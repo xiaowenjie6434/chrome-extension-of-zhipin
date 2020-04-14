@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <script src='jquery-3.4.1.min.js'></script>
+        <title>当前提取的boss数据</title>
+        <style>
+            #items {
+                font-size: 12px;
+            }
+            #items img {
+                width: 25px;
+                height: 25px;
+            }
+
+            button {
+                color: white;
+                background-color: rebeccapurple;
+                border-radius: 10%;
+                border: 1px solid none;
+            }
+
+            #items tr:first-child {
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            #items {
+                width: 500px;
+            }
+            
+            .td_image {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>当前页提取的数据</h3>
+        <input type="checkbox"  id='append'>追加模式
+        <label daa-for="pagecount">请求页数</label>
+        <input type="number" value='5' min=1 max=100 id='pagecount'>
+        <button id='autopage'>自动翻页</button>
+        <button id="pre">上一页</button>
+        <button id='next'>下一页</button>
+       <button id = 'downtable'>导出</button>
+        <table id="items">
+            <tr>
+                <td>标题</td>
+                <td>薪水</td>
+                <td>工资</td>
+                <td>图片</td>
+            </tr>
+        </table>
+    </body>
+    <script src='popup.js'></script>
+
+</html>
